@@ -1,0 +1,66 @@
+.scroll_news {
+    margin: 0 8px 8px;
+    height: 30px;
+    line-height: 30px;
+    vertical-align: bottom;
+    font-size: 12px;
+    border-radius: 6px;
+    background-color: #fff;
+    padding: 0 5px;
+    position: relative; 
+}
+/* .scroll_news a {
+    display: inline-block;
+} */
+.scroll_news>div {
+    display: inline-block;
+    vertical-align: top;
+}
+.scroll_news_head {
+    width: 25%;
+    position: relative;
+}
+.scroll_news_head img {
+    width: 100%;  
+    display: inline-block;
+    vertical-align: text-top;  
+}
+.scroll_news_body {
+    overflow: hidden;
+    width: 55%;
+    height: 100%;
+}
+.scroll_news_body ul,.scroll_news_body ul li{
+    display: block;
+}
+.scroll_news_body ul {
+    position: relative;
+    height: 100%;
+}
+.scroll_news_body li {
+    height: 100%;
+    width: 100%;
+    top: 0;
+    left: 0;
+    position: absolute;
+}
+.scroll_news_body a {
+    display: inline-block;
+    width: 90%;
+    overflow: hidden;
+    text-overflow:ellipsis;
+    white-space: nowrap;
+    vertical-align: bottom;
+}
+
+.scroll_news_body span {
+    color:red;
+}
+.scroll_news_more {
+    height:100%;
+}
+.scroll_news_more a {
+    margin-left: 15px;
+    border-left: 1px solid rgba(128, 128, 128, 0.2);
+    padding-left: 8px;
+}

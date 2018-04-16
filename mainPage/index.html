@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width,user-scalable=no, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>移动端京东商城部分仿写</title>
+    <link rel="stylesheet" href="./main.css">
+</head>
+
+<body>
+    <div class="layout">
+        <header>
+            <div class="searchbar" id="search" :style="searchstyle">
+                <a class="search_page_btn">JD</a>
+                <input type="text" name="" id="" v-model.trim="content" :placeholder="searchtext">
+                <a class="login">登录</a>
+            </div>
+            <div class="carouselbar" id="carousel">
+                 <div class="carousel_top_bg"></div>
+                <ul class="carousel_pic" :style="ulstyle" @touchstart.stop="touchstart" @touchmove.stop="touchmove" @touchend="touchend">
+                    <li v-for="(pic,index) in pics" :style="[styles[index],touchstyles[index]]">
+                        <a>
+                            <img :src="pic" />
+                        </a>
+                    </li>
+                </ul>
+                <ul class="carousel_circle">
+                    <li v-for="(pic,index) in pics" :style="circle[index]">
+                    </li>
+                </ul>
+            </div>
+        </header>
+        <main>
+            <nav class="appcenter" id="appcenter">
+                <div v-for=" item in pics" class="appcenter_box">
+                    <a href=""> <img :src="item.url"/></a>
+                    <span>{{item.title}}</span>
+                </div>
+                <div class="activity1">
+                    <a href="">
+                        <img :src="activity" alt="">
+                    </a>
+                </div>
+            </nav>
+            <div class="scroll_news" id="scroll_news">
+                <div class="scroll_news_head">
+                    <a href="">
+                            <img src="./img/jd_news_head.png" alt="">
+                    </a>                
+                </div>
+                <div class="scroll_news_body">
+                    <ul>
+                        <li v-for="(news, index) in news" :style="listyles[index]">
+                            <span>{{news.title}}</span>
+                            <a href="">{{news.text}}</a>
+                        </li>
+                    </ul>
+                </div>
+                <div class="scroll_news_more">
+                    <a href="">更多</a>
+                </div>
+            </div>
+            <div class="secondkill" id="secondkill">
+                <div class="secondkill_banner">
+                    <div class="secondkill_headpic"><img src="./img/secondkill.png" alt=""/></div>
+                    <div class="secondkill_timeset">
+                            <span>{{timeset}}</span>点场
+                    </div>
+                    <div class="secondkill_timer">
+                        <div>{{time.hour}}</div>
+                        <span>:</span>
+                        <div>{{time.min}}</div>
+                        <span>:</span>
+                        <div>{{time.second}}</div>
+                    </div>
+                    <div class="secondkill_btn">
+                        <span>京选尖货秒</span>
+                        <i></i>
+                    </div>
+                </div>
+                <div class="secondkill_content">
+                    <div v-for="(item, index)  in kill">
+                        <a>
+                            <img :src="item.src" alt="">
+                        <a/> 
+                        <span>￥{{item.price}}</span>
+                        <span>￥{{item.oldprice}}</span>
+                    </div>
+                </div>
+            </div>
+        </main>
+        <footer class="navbar"></footer>
+    </div>
+
+    <script src="https://cdn.jsdelivr.net/npm/vue"></script>
+    <script src="./js/search.js"></script>
+    <script src="./js/carousel.js"></script>
+    <script src="./js/appcenter.js"></script>
+    <script src="./js/scrollnews.js"></script>
+    <script src="./js/secondkill.js"></script>
+</body>
+
+</html>

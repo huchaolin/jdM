@@ -1,0 +1,48 @@
+
+.carousel_top_bg {
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: 1;
+    width: 100%;
+    height: 39px;
+    background: linear-gradient(to bottom,
+                rgba(0, 0, 0, 0.836),
+                rgba(0, 0, 0, 0.7) 25%,
+                rgba(0, 0, 0, 0.55) 50%,
+                rgba(0, 0, 0, 0.225) 75%,
+                rgba(0, 0, 0, 0) 100%)
+}
+.carouselbar {
+    width: 100%;
+    position: relative;
+}
+ul.carousel_pic {
+    width: 100%;
+    position: relative;
+    overflow: hidden;
+}
+ul.carousel_pic li {
+    position: absolute;
+    width: 100%;
+    left: 0;
+    top: 0;
+    display: inline-block;
+}
+ul.carousel_pic li img{
+    width: 100%;
+}
+ul.carousel_circle {
+    position: absolute; 
+    width: 100%;
+    bottom: 5%;
+    text-align: center;
+}
+ul.carousel_circle li {
+    display: inline-block;
+    margin: 0 5px;
+    border: solid 1px gray;
+    height: 6px;
+    width: 6px;
+    border-radius: 50%;
+}

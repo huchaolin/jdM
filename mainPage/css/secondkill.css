@@ -1,0 +1,96 @@
+.secondkill {
+    background-color: white;
+}
+.secondkill_banner {
+    height: 34px;
+    line-height: 34px;
+}
+.secondkill_banner>div {
+    display: inline-block;
+    vertical-align: top;
+}
+.secondkill_headpic, .secondkill_timer,.secondkill_btn {
+height: 100%;
+overflow: hidden;
+}
+.secondkill_headpic{
+    position: relative;
+    width: 20%;
+}
+.secondkill_headpic img {
+    position: absolute;
+    bottom:2px;
+    width: 100%;
+}
+.secondkill_timer>div ,.secondkill_timer>span {
+    display: inline-block;
+    line-height: 17PX;
+    color: #232326;
+    font-size: 12PX;
+}
+.secondkill_timeset {
+    height: 100%;
+    font-size: 12PX;
+    color: #232326;
+    font-weight: bold;  
+}
+.secondkill_timer>div{
+    width: 18px;
+    height: 18px;
+    line-height: 17px;
+    border: 1PX solid #dfdfdf;
+}
+.secondkill_btn {
+    width: 40%;
+    text-align: right;
+    color:#f23030; 
+    font-size: 12px;
+   
+}
+.secondkill_btn i {
+    display: inline-block;
+    background: url(../img/arrow.svg) no-repeat;
+    background-size:100% 100%;
+    width: 12px;
+    height: 12px;
+}
+.secondkill_content {
+    font-size: 0;
+    /* white-space: nowrap; */
+    /* overflow: scroll; */
+}
+.secondkill_content>div {
+    width: 90px;
+    display: inline-block;
+    white-space: normal;
+    text-align: center;
+}
+.secondkill_content a {
+    display: inline-block;
+    width: 68px;
+    height: 68px;
+}
+.secondkill_content a img {
+    height:100%;
+    width: 100%;
+}
+.secondkill_content span:nth-of-type(1) {
+    margin-top: 11PX;
+    display: block;
+    color: #f23030;
+    font-size: 16PX;
+    line-height: 16PX;
+    height: 16PX;
+    text-align: center;
+    font-weight: bold;
+}
+.secondkill_content span:nth-of-type(2) {
+    color: #686868;
+    font-size: 12PX;
+    line-height: 12PX;
+    margin: 4PX 0 11PX 0;
+    text-align: center;
+    display: block;
+    padding: 0 2PX;
+    text-decoration: line-through;
+    }

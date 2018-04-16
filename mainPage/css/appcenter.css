@@ -1,0 +1,28 @@
+.appcenter {
+    overflow: hidden;
+    width: 100%;
+    margin: 8px 0;
+}
+ .appcenter_box {
+    float: left;
+    width: 20%;
+    text-align: center;
+    margin: 3px 0;
+    line-height: 14px;
+}
+.appcenter_box a {
+    width: 29px;
+    margin: 0 auto;
+    display: block;
+}
+.appcenter_box span {
+    font-size: 12px;
+    color: gray;
+}
+.appcenter_box img {
+    width: 29px;
+    height:29px;
+}
+.activity1 img {
+    width: 100%;
+}
